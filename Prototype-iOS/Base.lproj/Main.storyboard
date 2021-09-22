@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Prototype_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p4W-OW-5Id" customClass="ProfilePhotoView" customModule="Prototype_iOS" customModuleProvider="target">
+                                <rect key="frame" x="103" y="51.5" width="240" height="241.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="lcp-UI-5S7"/>
+                                    <constraint firstAttribute="width" constant="240" id="mBm-Qe-lFa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="photoShape">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="AccentColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HsG-Ti-ZY5" customClass="PlaceHolderBorderedTextView" customModule="Prototype_iOS" customModuleProvider="target">
+                                <rect key="frame" x="20" y="352" width="374" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="LOH-BT-Cdm"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UEJ-JK-3pc" customClass="PasswordTF" customModule="Prototype_iOS" customModuleProvider="target">
+                                <rect key="frame" x="20" y="496" width="323" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="323" id="eTM-k8-rFV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uz-X4-hx4" customClass="CapsuleButton" customModule="Prototype_iOS" customModuleProvider="target">
+                                <rect key="frame" x="180" y="650" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6Cy-uG-1sX"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="7zz-TT-f2O"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bxp-WV-RJZ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fps-1I-bh0" userLabel="Location" customClass="LocationTF" customModule="Prototype_iOS" customModuleProvider="target">
+                                <rect key="frame" x="20" y="559" width="323" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="323" id="tV5-bf-Lpu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HsG-Ti-ZY5" secondAttribute="trailing" constant="20" id="3T5-dL-LJn"/>
+                            <constraint firstItem="HsG-Ti-ZY5" firstAttribute="top" secondItem="p4W-OW-5Id" secondAttribute="bottom" constant="60" id="754-AH-ATF"/>
+                            <constraint firstItem="UEJ-JK-3pc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7g7-wL-fGa"/>
+                            <constraint firstItem="HsG-Ti-ZY5" firstAttribute="top" secondItem="p4W-OW-5Id" secondAttribute="bottom" constant="60" id="8Ue-pW-CNT"/>
+                            <constraint firstItem="fps-1I-bh0" firstAttribute="leading" secondItem="UEJ-JK-3pc" secondAttribute="leading" id="AYo-xU-lut"/>
+                            <constraint firstItem="HsG-Ti-ZY5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="308" id="D7B-d4-KRY"/>
+                            <constraint firstItem="2uz-X4-hx4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="13" id="KuG-aQ-9lj"/>
+                            <constraint firstItem="HsG-Ti-ZY5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QPN-Xn-Wk1"/>
+                            <constraint firstItem="p4W-OW-5Id" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="SP6-qU-vgW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UEJ-JK-3pc" secondAttribute="trailing" symbolic="YES" id="cQA-Ft-EcG"/>
+                            <constraint firstItem="p4W-OW-5Id" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="16" id="fP6-Dr-6KK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fps-1I-bh0" secondAttribute="trailing" symbolic="YES" id="g7b-Ot-b3z"/>
+                            <constraint firstItem="2uz-X4-hx4" firstAttribute="top" secondItem="fps-1I-bh0" secondAttribute="bottom" constant="57" id="nD6-mQ-RBO"/>
+                            <constraint firstItem="fps-1I-bh0" firstAttribute="top" secondItem="UEJ-JK-3pc" secondAttribute="bottom" constant="29" id="pOB-XS-otL"/>
+                            <constraint firstItem="UEJ-JK-3pc" firstAttribute="top" secondItem="HsG-Ti-ZY5" secondAttribute="bottom" constant="16" id="zIY-4S-iag"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="2uz-X4-hx4" id="sIt-PT-UgB"/>
+                        <outlet property="textView" destination="HsG-Ti-ZY5" id="SMA-P5-XRa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-436.23188405797106" y="111.83035714285714"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="2uz-X4-hx4">
+            <size key="intrinsicContentSize" width="57" height="34"/>
+        </designable>
+        <designable name="UEJ-JK-3pc">
+            <size key="intrinsicContentSize" width="122.5" height="34"/>
+        </designable>
+        <designable name="fps-1I-bh0">
+            <size key="intrinsicContentSize" width="117.5" height="34"/>
+        </designable>
+        <designable name="p4W-OW-5Id">
+            <size key="intrinsicContentSize" width="22" height="20"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

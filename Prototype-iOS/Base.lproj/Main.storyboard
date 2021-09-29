@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p4W-OW-5Id" customClass="ProfilePhotoView" customModule="Prototype_iOS" customModuleProvider="target">
-                                <rect key="frame" x="103" y="51.5" width="240" height="241.5"/>
+                                <rect key="frame" x="103" y="52" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="lcp-UI-5S7"/>
                                     <constraint firstAttribute="width" constant="240" id="mBm-Qe-lFa"/>
@@ -103,13 +103,13 @@
     </scenes>
     <designables>
         <designable name="2uz-X4-hx4">
-            <size key="intrinsicContentSize" width="57" height="34"/>
+            <size key="intrinsicContentSize" width="46" height="30"/>
         </designable>
         <designable name="UEJ-JK-3pc">
-            <size key="intrinsicContentSize" width="122.5" height="34"/>
+            <size key="intrinsicContentSize" width="90.5" height="34"/>
         </designable>
         <designable name="fps-1I-bh0">
-            <size key="intrinsicContentSize" width="117.5" height="34"/>
+            <size key="intrinsicContentSize" width="83.5" height="34"/>
         </designable>
         <designable name="p4W-OW-5Id">
             <size key="intrinsicContentSize" width="22" height="20"/>
